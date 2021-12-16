@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="JSON API"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="70dp" />
+
+    <ListView
+        android:id="@+id/userList"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@id/buttonGet"
+        android:layout_marginTop="1dp" />
+
+
+    <Button
+        android:id="@+id/buttonGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="296dp"
+        android:background="@color/black"
+        android:text="Get Data"
+        android:textColor="@color/black"
+        android:textColorHighlight="#ACA0A0"
+        android:textColorLink="#1C1818" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-3dp"
+        android:background="@color/black"
+        android:text="Send Data"
+        android:textColor="@color/black"
+        android:textColorHighlight="#ACA0A0"
+        android:textColorLink="#1C1818" />
+
+    <ListView
+        android:id="@+id/newUserList"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_below="@id/buttonSend"
+        android:layout_marginTop="4dp" />
+
+
+</RelativeLayout>
